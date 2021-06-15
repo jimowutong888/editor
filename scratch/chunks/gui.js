@@ -147,7 +147,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 
 var onClickLogo = function onClickLogo() {
-  window.location = 'https://timfang.gitee.io/';
+  window.location = '/';
 };
 
 var handleTelemetryModalCancel = function handleTelemetryModalCancel() {
