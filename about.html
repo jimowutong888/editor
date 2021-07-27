@@ -68,25 +68,21 @@
     .feature {
       margin-top: 100px;
     }
+    .disable-drag {
+    -webkit-user-drag: none;
+    }
   </style>
   <meta name="ljjc::status" content="on" />
 </head>
 
-<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-loaded">
-  <div class="
-        mdui-appbar
-        mdui-shadow-0
-        mdui-appbar-fixed
-        mdui-appbar-scroll-hide
-        mdui-headroom
-        mdui-headroom-pinned-top
-      ">
+<body class="mdui-theme-primary-indigo mdui-theme-accent-pink mdui-loaded" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+  <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-appbar-scroll-hide mdui-headroom mdui-headroom-pinned-top">
     <div class="mdui-toolbar mdui-color-theme">
       <a class="mdui-btn mdui-btn-icon" one-link-mark="yes" href="/"
         mdui-tooltip="{content: '返回', position: 'bottom'}"><i class="mdui-icon material-icons">arrow_back</i></a>
       <a class="mdui-typo-headline" one-link-mark="yes">关于</a>
       <div class="mdui-toolbar-spacer"></div>
-      <a class="mdui-btn mdui-btn-icon" one-link-mark="yes" href="/scratch"
+      <a class="mdui-btn mdui-btn-icon" one-link-mark="yes" href="/scratch/"
         mdui-tooltip="{content: 'Scratch', position: 'bottom'}"><i class="mdui-icon material-icons">edit</i></a>
       <!--<a class="mdui-btn mdui-btn-icon" one-link-mark="yes"
         mdui-tooltip="{content: '暂不支持', position: 'bottom'}"><i
@@ -110,25 +106,91 @@
     <div class="adv-item-detail-title">联系方式</div>
     <div class="mdui-panel mdui-panel-gapless" mdui-panel>
 
+    <div class="mdui-panel-item">
+        <div class="mdui-panel-item-header">
+          <div class="mdui-panel-item-title">Wechat</div>
+          <div class="mdui-panel-item-summary">寂寞酱</div>
+          <i class="mdui-panel-item-arrow mdui-icon    material-icons">keyboard_arrow_down</i>
+        </div>
+        <div class="mdui-panel-item-body">
+          <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#wechat'}"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</button>
+        </div>
+      </div>
+        <div class="mdui-dialog" id="wechat">
+            <img class="mdui-center disable-drag" src="/img/wx.jpg" width="400" height="400">
+        </div>
+
       <div class="mdui-panel-item">
         <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">Aerfaying</div>
+          <div class="mdui-panel-item-title">QQ</div>
           <div class="mdui-panel-item-summary">寂寞酱</div>
+          <i class="mdui-panel-item-arrow mdui-icon    material-icons">keyboard_arrow_down</i>
+        </div>
+        <div class="mdui-panel-item-body">
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="http://wpa.qq.com/msgrd?v=3&uin=1989846571&site=qq&menu=yes" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</a>
+        </div>
+      </div> 
+
+    <div class="mdui-panel-item">
+        <div class="mdui-panel-item-header">
+          <div class="mdui-panel-item-title">E-Mail(QQ)</div>
+          <div class="mdui-panel-item-summary">jimowutong888@qq.com</div>
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://aerfaying.com/Users/1091432" target="_blank">寂寞酱</a>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="mailto://jimowutong888@qq.com" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>jimowutong888@qq.com</a>
         </div>
       </div>
 
       <div class="mdui-panel-item">
         <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">Gitblock</div>
+          <div class="mdui-panel-item-title">E-Mail(163)</div>
+          <div class="mdui-panel-item-summary">lonely_sauce@163.com</div>
+          <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+        </div>
+        <div class="mdui-panel-item-body">
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="mailto://lonely_sauce@163.com" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>lonely_sauce@163.com</a>
+        </div>
+      </div>  
+    </div>
+    </br>
+    <div class="mdui-divider"></div>
+
+    <div class="adv-item-detail-title">网站账户</div>
+    <div class="mdui-panel mdui-panel-gapless" mdui-panel>
+
+    <div class="mdui-panel-item">
+        <div class="mdui-panel-item-header">
+          <div class="mdui-panel-item-title">CCW</div>
           <div class="mdui-panel-item-summary">寂寞酱</div>
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://gitblock.cn/Users/1091432" target="_blank">寂寞酱</a>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://ccw.site/student/5cfe55d5f1880737bf1237a9" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</a>
+        </div>
+      </div>
+        
+        <div class="mdui-panel-item">
+        <div class="mdui-panel-item-header">
+          <div class="mdui-panel-item-title">ScratchMIT</div>
+          <div class="mdui-panel-item-summary">lonely-sauce</div>
+          <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+        </div>
+        <div class="mdui-panel-item-body">
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://scratch.mit.edu/users/lonely-sauce/" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>lonely-sauce</a>
+        </div>
+      </div>
+
+      <div class="mdui-panel-item">
+        <div class="mdui-panel-item-header">
+          <div class="mdui-panel-item-title">Aerfaying / Gitblock</div>
+          <div class="mdui-panel-item-summary">寂寞酱</div>
+          <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+        </div>
+        <div class="mdui-panel-item-body">
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://aerfaying.com/Users/1091432" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</a>
+          </br>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://gitblock.cn/Users/1091432" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</a>
         </div>
       </div>
 
@@ -139,29 +201,7 @@
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://kada.163.com/u/2939003.htm" target="_blank">寂寞酱</a>
-        </div>
-      </div>
-
-      <div class="mdui-panel-item">
-        <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">CCW</div>
-          <div class="mdui-panel-item-summary">寂寞酱</div>
-          <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-        </div>
-        <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://ccw.site/student/5cfe55d5f1880737bf1237a9" target="_blank">寂寞酱</a>
-        </div>
-      </div>
-
-      <div class="mdui-panel-item">
-        <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">ScratchMIT</div>
-          <div class="mdui-panel-item-summary">lonely-sauce</div>
-          <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-        </div>
-        <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://scratch.mit.edu/users/lonely-sauce/" target="_blank">lonely-sauce</a>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://kada.163.com/u/2939003.htm" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</a>
         </div>
       </div>
 
@@ -172,7 +212,7 @@
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://world.xiaomawang.com/w/person/project/all/681321" target="_blank">寂寞酱</a>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://world.xiaomawang.com/w/person/project/all/681321" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</a>
         </div>
       </div>
 
@@ -183,7 +223,7 @@
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://www.scratch-cn.cn/user/project?comid=6035e53493610e1764a13bb7" target="_blank">寂寞酱</a>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://www.scratch-cn.cn/user/project?comid=6035e53493610e1764a13bb7" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</a>
         </div>
       </div>
 
@@ -194,18 +234,7 @@
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://www.luogu.com.cn/user/336091" target="_blank">寂寞酱</a>
-        </div>
-      </div>
-
-      <div class="mdui-panel-item">
-        <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">E-Mail</div>
-          <div class="mdui-panel-item-summary">jimowutong888@qq.com</div>
-          <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-        </div>
-        <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="mailto://jimowutong888@qq.com" target="_blank">jimowutong888@qq.com</a>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://www.luogu.com.cn/user/336091" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</a>
         </div>
       </div>
 
@@ -216,7 +245,7 @@
           <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://github.com/jimowutong888" target="_blank">jimowutong888</a>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://github.com/jimowutong888" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>jimowutong888</a>
         </div>
       </div>
 
@@ -227,29 +256,7 @@
           <i class="mdui-panel-item-arrow mdui-icon   material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://gitee.com/lonely-sauce" target="_blank">lonely-sauce</a>
-        </div>
-      </div>
-
-       <div class="mdui-panel-item">
-        <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">Wechat</div>
-          <div class="mdui-panel-item-summary">寂寞酱</div>
-          <i class="mdui-panel-item-arrow mdui-icon    material-icons">keyboard_arrow_down</i>
-        </div>
-        <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="/img/wx.jpg" target="_blank">寂寞酱</a>
-        </div>
-      </div>
-
-      <div class="mdui-panel-item">
-        <div class="mdui-panel-item-header">
-          <div class="mdui-panel-item-title">QQ</div>
-          <div class="mdui-panel-item-summary">寂寞酱</div>
-          <i class="mdui-panel-item-arrow mdui-icon    material-icons">keyboard_arrow_down</i>
-        </div>
-        <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="http://wpa.qq.com/msgrd?v=3&uin=1989846571&site=qq&menu=yes" target="_blank">寂寞酱</a>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://gitee.com/lonely-sauce" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>lonely-sauce</a>
         </div>
       </div>
 
@@ -260,7 +267,7 @@
           <i class="mdui-panel-item-arrow mdui-icon     material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://space.bilibili.com/2104380290/" target="_blank">稽木酱</a>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://space.bilibili.com/2104380290/" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>稽木酱</a>
         </div>
       </div>
 
@@ -271,8 +278,20 @@
           <i class="mdui-panel-item-arrow mdui-icon     material-icons">keyboard_arrow_down</i>
         </div>
         <div class="mdui-panel-item-body">
-          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://www.i3done.com/u/68831442645" target="_blank">寂寞酱</a>
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://www.i3done.com/u/68831442645" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</a>
         </div>
+      </div>
+
+      <div class="mdui-panel-item">
+        <div class="mdui-panel-item-header">
+          <div class="mdui-panel-item-title">XueErSi</div>
+          <div class="mdui-panel-item-summary">寂寞酱</div>
+          <i class="mdui-panel-item-arrow mdui-icon     material-icons">keyboard_arrow_down</i>
+        </div>
+        <div class="mdui-panel-item-body">
+          <a class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" href="https://code.xueersi.com/space/24322653" target="_blank"><i class="mdui-icon material-icons">&#xe853;</i>寂寞酱</a>
+        </div>
+      </div>
       </div>
 </body>
 </html>
